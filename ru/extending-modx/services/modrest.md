@@ -112,7 +112,7 @@ $headers=  array(
 
 // передаем наши заголовки сразу в класс
 /* @var modRest $client */
-$client = $this->modx->getService('rest', 'rest.modRest', array('headers' => $headers);
+$client = $this->modx->getService('rest', 'rest.modRest', array('headers' => $headers));
 
 # или записываем заголовки в запрос
 `$response = $client->get($url, array(), $headers);`
